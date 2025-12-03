@@ -40,8 +40,6 @@ builder.Services.AddCors(options =>
 });
 
 // Add services to the container
-builder.Services.AddDbContext<ToDoDbContext>(options =>
-    options.UseMySql(connStr, ServerVersion.AutoDetect(connStr)));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
